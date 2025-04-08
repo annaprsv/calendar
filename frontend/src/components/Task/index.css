@@ -1,0 +1,54 @@
+/* Стиль задачи */
+.task-item {
+  position: relative; /* Для абсолютного позиционирования кнопок */
+  padding: 10px 80px 10px 15px; /* Правая padding оставляет место под кнопки */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  list-style: none;
+  transition: background-color 0.2s;
+}
+
+.task-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Контейнер кнопок (изначально скрыт) */
+.task-actions {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0; /* Прозрачность 0 (невидим) */
+  visibility: hidden; /* Полностью скрыт из DOM */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+/* При наведении на задачу — показываем кнопки */
+.task-item:hover .task-actions {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили кнопок */
+.delete-button,
+.move-button,
+.settings-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.delete-button:hover {
+  color: red;
+}
+
+.move-button:hover,
+.settings-button:hover {
+  color: #007bff;
+}

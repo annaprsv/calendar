@@ -1,0 +1,24 @@
+.calendar-day {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  height: 150px;
+  overflow-y: auto; /* Прокрутка, если задачи не помещаются */
+}
+
+.day-number {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px; /* Отступ между числом и задачами */
+}
+
+.task {
+  border: 2px solid #ff779585; /* Цвет и толщина обводки */
+  border-radius: 50px; /* Закругленные углы */
+  padding: 8px; /* Отступы внутри задачи */
+  background-color: #ff98ae85; /* Цвет фона задачи */
+  margin-bottom: 5px; /* Отступ между задачами */
+  font-size: 14px; /* Размер текста */
+  color: #333; /* Цвет текста */
+}

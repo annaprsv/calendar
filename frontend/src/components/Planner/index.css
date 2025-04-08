@@ -1,0 +1,45 @@
+.planner-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.planner-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.task-input-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.task-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-task-button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-task-button:hover {
+  background-color: #0056b3;
+}
+
+.planner-tasks {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+

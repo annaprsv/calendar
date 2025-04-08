@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "admin",
+    "database": "task_db",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5432
+  }
+}
